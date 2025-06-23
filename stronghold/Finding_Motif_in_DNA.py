@@ -13,6 +13,8 @@ def find_substring_locations(s: str, t: str) -> list[int]:
     len_s = len(s)
     len_t = len(t)
 
+    print(f"len_s: {len_s}, len_t: {len_t}")
+
     # Iterate through s up to the point where t can still fit
     for i in range(len_s - len_t + 1):
         # Extract a substring of s with the same length as t
